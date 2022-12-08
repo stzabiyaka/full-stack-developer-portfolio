@@ -1,0 +1,16 @@
+@import "../../constants/constants.scss";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: $mobile;
+  min-height: 100vh;
+
+  font-size: 14px;
+  line-height: 1.35;
+  font-weight: 400;
+  text-align: center;
+
+  background-color: $background-body;
+}

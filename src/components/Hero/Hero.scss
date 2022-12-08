@@ -1,0 +1,56 @@
+@import "../../constants/constants.scss";
+
+.hero__section {
+  align-self: flex-start;
+  margin-top: 50px;
+  margin-left: 50px;
+  background-color: $background-primary;
+  max-width: 1024px;
+  width: calc(100% - 32px);
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  box-shadow: $shadow-body;
+}
+
+.hero__title {
+  font-size: calc(10px + 3vmin);
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: $color-primary;
+}
+
+.hero__name {
+  font-size: calc(10px + 1vmin);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero__name-span {
+  color: $color-accent;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
