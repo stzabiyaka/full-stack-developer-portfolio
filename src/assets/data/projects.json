@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Petly",
+    "link": "https://velogitara.github.io/petly-project-front/",
+    "repositoryLink": "https://github.com/velogitara/petly-project-front",
+    "repositoryBackLink": "https://github.com/velogitara/PetLy-project-Back",
+    "description": "Web application for finding home for pets, developed using HTML5, CSS3, SCSS, responsive layout, React.js, Redux, Node.js, Express, MongoDB, Mongoose, REST API.",
+    "type": "Team full-stack training project.",
+    "role": "Full-stack developer."
+  },
+  {
+    "name": "Filmoteka",
+    "link": "https://stzabiyaka.github.io/filmoteka-team-project/",
+    "repositoryLink": "https://github.com/stzabiyaka/filmoteka-team-project",
+    "description": "Web application for searching movies and managing client's personal library, developed using HTML5, CSS3, responsive layout, vanilla JavaScript, Parcel, REST API, AJAX.",
+    "type": "Team frontend training project.",
+    "role": "Team Lead."
+  },
+  {
+    "name": "IceCream",
+    "link": "https://stzabiyaka.github.io/icecream-team-project/",
+    "repositoryLink": "https://github.com/stzabiyaka/icecream-team-project",
+    "description": "Website for Ice Cream company, developed using HTML5, CSS3, SCSS, responsive layout, vanilla JavaScript, Parcel.",
+    "type": "Team frontend training project.",
+    "role": "Team Lead."
+  }
+]
