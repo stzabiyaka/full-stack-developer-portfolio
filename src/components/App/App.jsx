@@ -1,5 +1,7 @@
 import AppBar from "../AppBar/AppBar";
 import Hero from "../Hero/Hero";
+// import Projects from "../Projects/Projects";
+import Footer from "../Footer/Footer";
 import "./App.scss";
 
 const App = () => {
@@ -7,6 +9,8 @@ const App = () => {
     <div className="App">
       <AppBar />
       <Hero />
+      {/* <Projects /> */}
+      <Footer />
     </div>
   );
 };

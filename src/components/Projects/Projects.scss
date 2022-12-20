@@ -1,0 +1,36 @@
+@import "../../constants/constants.scss";
+
+.projects__section {
+  position: absolute;
+
+  top: 50px;
+  right: 50px;
+
+  max-width: 60vw;
+  min-width: 60vw;
+  min-height: calc(70vh - 150px);
+  max-height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-end;
+
+  padding: 20px;
+
+  font-size: calc(10px + 1vmin);
+  color: white;
+  background-color: $background-primary;
+  box-shadow: $shadow-body;
+
+  z-index: 4;
+}
+
+.projects__title {
+  margin-left: auto;
+  margin-bottom: 1vmin;
+
+  font-size: calc(10px + 1vmin);
+  font-weight: 700;
+  text-transform: uppercase;
+}

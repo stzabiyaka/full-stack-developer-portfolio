@@ -1,0 +1,14 @@
+.footer__container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 50px;
+}
+
+.footer__copyright {
+  font-size: calc(8px + 0.5vmin);
+}
