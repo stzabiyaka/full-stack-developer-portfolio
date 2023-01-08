@@ -21,7 +21,7 @@
 
   transition: $transition;
 
-  &.current {
+  &.active {
     &::after {
       position: absolute;
       bottom: -16px;

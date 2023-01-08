@@ -1,21 +1,18 @@
-import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./NavBar.scss";
 
-const NavBar = ({ navLinks, current, onLink }) => {
-  const [currentPage, setCurrentPage] = useState(current);
-
+const NavBar = ({ navLinks }) => {
   return (
     <ul className="navLinks__list">
       {navLinks.map((link, index) => (
         <li className="navLinks__list-item" key={link + index}>
-          <a
-            href={`#${link}`}
-            className={`navLink${currentPage === link ? " current" : ""}`}
+          <NavLink
+            className="navLink"
+            to={`/${link === "home" ? "" : link}`}
             title={link}
-            onClick={() => setCurrentPage(link)}
           >
             {link}
-          </a>{" "}
+          </NavLink>{" "}
         </li>
       ))}
     </ul>
