@@ -7,6 +7,10 @@
   align-items: flex-start;
   width: 100%;
   min-height: 50px;
+
+  z-index: 10;
+
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .footer__copyright {

@@ -1,5 +1,7 @@
 import logo from "../assets/icons/sz.svg";
 import icons from "../assets/icons/icons.svg";
+import projects from "../assets/data/projects.json";
+import images from "../assets/images";
 
 const CONSTANTS = {
   logo,
@@ -12,6 +14,8 @@ const CONSTANTS = {
   stack: ["html5", "css3", "javaScript", "react.js", "redux", "node.js"],
   about:
     "I am a full-stack developer, dedicated to creation of beautiful, functional and convenient web applications.",
+  projects,
+  images,
 };
 
 export { CONSTANTS };

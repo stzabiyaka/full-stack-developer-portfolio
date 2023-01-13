@@ -6,6 +6,8 @@
   align-items: center;
   min-width: $mobile;
   min-height: 100vh;
+  padding: $layout-padding 0;
+  margin: 0 auto;
 
   font-size: 14px;
   line-height: 1.35;
@@ -13,4 +15,9 @@
   text-align: center;
 
   color: $color-primary;
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding: calc($layout-padding * 5) calc($layout-padding * 2);
+  }
 }
