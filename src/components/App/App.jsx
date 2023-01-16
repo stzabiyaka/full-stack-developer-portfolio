@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import AppBar from "../AppBar/AppBar";
+// import AppBar from "../AppBar/AppBar";
 import Hero from "../Hero/Hero";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
@@ -9,7 +9,7 @@ import "./App.scss";
 const App = () => {
   return (
     <div className="App">
-      <AppBar />
+      {/* <AppBar /> */}
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="projects" element={<Projects />} />

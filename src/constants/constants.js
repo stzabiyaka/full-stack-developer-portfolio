@@ -1,6 +1,7 @@
 import logo from "../assets/icons/sz.svg";
 import icons from "../assets/icons/icons.svg";
 import projects from "../assets/data/projects.json";
+import contacts from "../assets/data/contacts.json";
 import images from "../assets/images";
 
 const CONSTANTS = {
@@ -15,6 +16,7 @@ const CONSTANTS = {
   about:
     "I am a full-stack developer, dedicated to creation of beautiful, functional and convenient web applications.",
   projects,
+  contacts,
   images,
 };
 

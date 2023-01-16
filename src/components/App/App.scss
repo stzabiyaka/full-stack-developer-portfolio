@@ -18,6 +18,7 @@
 
   @media screen and (min-width: $desktop) {
     width: $desktop;
-    padding: calc($layout-padding * 5) calc($layout-padding * 2);
+    padding: $layout-padding calc($layout-padding * 2) calc($layout-padding * 5)
+      calc($layout-padding * 2);
   }
 }

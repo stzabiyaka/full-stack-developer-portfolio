@@ -7,7 +7,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  min-height: 70px;
+  height: calc($layout-nav-height + 20px);
   width: 100%;
 
   z-index: 10;

@@ -1,1 +1,35 @@
 @import "../../constants/constants.scss";
+
+.contacts__list {
+  margin-right: auto;
+}
+
+.contact {
+  display: flex;
+
+  &:not(:last-of-type) {
+    margin-bottom: calc($layout-padding * 2);
+  }
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+
+  color: $color-primary;
+  text-decoration: none;
+
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.contact__icon {
+  width: 50px;
+  height: 50px;
+  margin-right: $layout-padding;
+  fill: currentColor;
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "phone",
+    "title": "+380 93 773 42 64",
+    "link": "tel:+380937734264"
+  },
+  {
+    "name": "mail",
+    "title": "stzabiyaka@gmail.com",
+    "link": "mailto:stzabiyaka@gmail.com"
+  },
+  {
+    "name": "resume",
+    "title": "Resume",
+    "link": "https://zabiiaka-resume.netlify.app/"
+  },
+  {
+    "name": "linkedin",
+    "title": "LinkedIn",
+    "link": "https://linkedin.com/in/stanislav-zabiyaka"
+  },
+  {
+    "name": "github",
+    "title": "GitHub",
+    "link": "https://github.com/stzabiyaka/"
+  },
+  {
+    "name": "location",
+    "title": "Dnipro, Ukraine",
+    "link": "https://goo.gl/maps/5oVry1PQgEGMQSTZ9"
+  }
+]

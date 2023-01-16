@@ -1,11 +1,12 @@
 import { CONSTANTS } from "../../constants/constants";
+import Section from "../Section/Section";
 import "./Hero.scss";
 
 const { title, name, familyName, about, icons, stack } = CONSTANTS;
 
 const Hero = () => {
   return (
-    <section id="home" className="hero__section">
+    <Section id="home" title={`${name} ${familyName}`}>
       <p className="hero__name">
         <span className="hero__name-span">{name}</span>&nbsp;
         {familyName}
@@ -26,7 +27,7 @@ const Hero = () => {
           ))}
         </ul>
       </div>
-    </section>
+    </Section>
   );
 };
 

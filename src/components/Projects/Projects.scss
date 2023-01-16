@@ -2,6 +2,7 @@
 
 .projects__list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: -28px;
   margin-left: -28px;
@@ -19,24 +20,32 @@
   color: $color-primary;
 
   box-shadow: 0 0 20px rgba(125, 5, 5, 0.5), 0 0 5px rgba(255, 125, 125, 0.2);
-
   transition: $transition;
 
   &:hover {
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.5),
       0 0 5px rgba(255, 255, 255, 0.5);
     transform: scale(1.05);
+    color: $color-accent;
   }
 }
 
 .project__image {
   display: block;
+  width: 320px;
+  height: 227px;
+
+  @media screen and (min-width: $tablet) {
+    width: 360px;
+    height: 255px;
+  }
 }
 
 .project__title {
   padding: 1vmin;
   font-size: 20px;
   font-family: $font-secondary;
+  color: currentColor;
 }
 
 .project__description {
@@ -45,6 +54,8 @@
   font-size: calc(10px + 1vmin);
   font-weight: 400;
   text-align: left;
+
+  color: $color-primary;
 }
 
 .project__overlay-container {

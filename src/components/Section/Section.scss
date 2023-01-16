@@ -5,18 +5,34 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  min-height: 100%;
 
   font-size: calc(10px + 1vmin);
   color: $color-primary;
   background-color: $background-primary;
+
+  animation: onLoad 500ms ease-in-out 0ms 1;
 }
 
 .section__title {
   display: block;
   margin-left: auto;
-  margin-bottom: 1vmin;
+  margin-bottom: 2vmin;
 
-  font-size: calc(16px + 1vmin);
+  font-size: calc(74px + 1vmin);
   font-weight: 700;
   text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.1);
+  text-shadow: 2px 2px 10px rgba(73, 1, 1, 0.5);
+}
+
+@keyframes onLoad {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
