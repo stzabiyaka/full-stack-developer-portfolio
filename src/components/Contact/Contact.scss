@@ -11,17 +11,11 @@ $card-width: 600px;
     width: $card-width;
     padding: calc($layout-unit * 3) $layout-unit;
 
-    background: linear-gradient(
-      to right,
-      #ffffff,
-      #ffffff 50%,
-      $color-secondary 50%,
-      $color-secondary
-    );
+    background: linear-gradient(to right, #ffffff 50%, $color-secondary 50%);
 
     border: none;
     border-radius: 20px;
-    box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   }
 }
 

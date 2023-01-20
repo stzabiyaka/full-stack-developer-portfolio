@@ -1,18 +1,109 @@
 @import "../../constants/constants.scss";
 
-.navLinks__list {
+.navbar {
+  position: relative;
+  width: 100%;
+  padding: $layout-unit 0;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    width: 100%;
+    height: calc($layout-unit * 5);
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+}
+
+.navbar__menu-button {
   display: flex;
   align-items: center;
+  padding: calc($layout-unit / 4);
+  margin-left: auto;
+
+  color: $color-primary;
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.navbar__menu-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+}
+
+.navigation {
+  position: absolute;
+  top: calc($layout-unit * 4);
+  right: -200px;
+
+  width: 150px;
+
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
+  z-index: 10;
+
+  transition: $transition;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    &.is-open {
+      transform: translateX(-200px);
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    position: static;
+    width: fit-content;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+.navLinks__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $layout-unit;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
 }
 
 .navLinks__list-item {
-  &:not(:last-of-type) {
-    margin-right: 24px;
+  padding: $layout-unit 0;
+
+  @media screen and (min-width: $tablet) {
+    padding: 0;
+    &:not(:last-of-type) {
+      margin-right: calc($layout-unit * 2);
+    }
   }
 }
 
 .navLink {
   position: relative;
+  padding: $layout-unit 0;
+
   font-size: 14px;
   font-weight: 500;
 
@@ -24,7 +115,7 @@
   &.active {
     &::after {
       position: absolute;
-      bottom: -16px;
+      bottom: 0;
       left: 0;
 
       width: 100%;

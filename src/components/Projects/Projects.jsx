@@ -38,8 +38,16 @@ const Projects = () => {
                         srcSet={`${images[image + "TabletWebp"]} 360w, ${
                           images[image + "TabletRetinaWebp"]
                         } 720w`}
-                        media="(min-width: 768px)"
+                        media="(min-width: 768px) and (max-width: 1599px)"
                         sizes="360px"
+                        type="image/webp"
+                      />
+                      <source
+                        srcSet={`${images[image + "DesktopWebp"]} 400w, ${
+                          images[image + "DesktopRetinaWebp"]
+                        } 800w`}
+                        media="(min-width: 1600px)"
+                        sizes="400px"
                         type="image/webp"
                       />
                       <source
@@ -53,7 +61,14 @@ const Projects = () => {
                         srcSet={`${images[image + "Tablet"]} 360w, ${
                           images[image + "TabletRetina"]
                         } 720w`}
-                        media="(min-width: 768px) and (max-width: 1199px)"
+                        media="(min-width: 768px) and (max-width: 1599px)"
+                        sizes="360px"
+                      />
+                      <source
+                        srcSet={`${images[image + "Desktop"]} 400w, ${
+                          images[image + "DesktopRetina"]
+                        } 800w`}
+                        media="(min-width: 1600px)"
                         sizes="360px"
                       />
                       <img

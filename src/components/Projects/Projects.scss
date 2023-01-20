@@ -1,7 +1,7 @@
 @import "../../constants/constants.scss";
 
 .projects__list {
-  width: 304px;
+  width: 100%;
   margin: auto;
 
   @media screen and (min-width: $tablet) {
@@ -15,16 +15,18 @@
     grid-template-columns: repeat(3, 360px);
     gap: 28px;
   }
+
+  @media screen and (min-width: $desktopXL) {
+    grid-template-columns: repeat(3, 400px);
+    gap: calc($layout-unit * 2);
+    width: fit-content;
+  }
 }
 
 .projects__list-item {
-  padding-bottom: 1vmin;
   margin-bottom: $layout-unit;
 
   @media screen and (min-width: $tablet) {
-    display: grid;
-    grid-template-columns: repeat(2, 360px);
-    gap: 14px;
     margin-bottom: 0;
   }
 }
@@ -34,12 +36,11 @@
   text-decoration: none;
   color: $color-primary;
 
-  box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(88, 88, 88, 0.9);
   transition: $transition;
 
   &:hover {
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5),
-      0 0 5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
     transform: scale(1.05);
     color: $color-accent;
   }

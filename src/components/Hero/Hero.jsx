@@ -6,7 +6,7 @@ const { title, name, familyName, about, icons, stack } = CONSTANTS;
 
 const Hero = () => {
   return (
-    <Section id="home" title={`${name} ${familyName}`}>
+    <Section id="home">
       <p className="hero__name">
         <span className="hero__name-span">{name}</span>&nbsp;
         {familyName}
