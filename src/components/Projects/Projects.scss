@@ -1,17 +1,32 @@
 @import "../../constants/constants.scss";
 
 .projects__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: -28px;
-  margin-left: -28px;
+  width: 304px;
+  margin: auto;
+
+  @media screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    gap: 14px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: repeat(3, 360px);
+    gap: 28px;
+  }
 }
 
 .projects__list-item {
-  margin-top: 28px;
-  margin-left: 28px;
   padding-bottom: 1vmin;
+  margin-bottom: $layout-unit;
+
+  @media screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    gap: 14px;
+    margin-bottom: 0;
+  }
 }
 
 .project__link {
@@ -19,7 +34,7 @@
   text-decoration: none;
   color: $color-primary;
 
-  box-shadow: 0 0 20px rgba(125, 5, 5, 0.5), 0 0 5px rgba(255, 125, 125, 0.2);
+  box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.3);
   transition: $transition;
 
   &:hover {

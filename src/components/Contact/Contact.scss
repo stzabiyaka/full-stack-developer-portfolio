@@ -1,14 +1,81 @@
 @import "../../constants/constants.scss";
 
+$card-width: 600px;
+
+.contacts__card {
+  margin: auto;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    width: $card-width;
+    padding: calc($layout-unit * 3) $layout-unit;
+
+    background: linear-gradient(
+      to right,
+      #ffffff,
+      #ffffff 50%,
+      $color-secondary 50%,
+      $color-secondary
+    );
+
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.3);
+  }
+}
+
+.contacts__info {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-accent;
+    width: calc($card-width / 2 - $layout-unit - 25px);
+  }
+}
+
+.contacts__info-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: $layout-unit;
+
+  fill: currentColor;
+}
+
+.contacts__info-name {
+  margin-bottom: 4px;
+
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: $color-secondary;
+}
+
+.contacts__info-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: $color-secondary;
+}
+
 .contacts__list {
-  margin-right: auto;
+  width: fit-content;
+  margin: 0 auto;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .contact {
   display: flex;
 
   &:not(:last-of-type) {
-    margin-bottom: calc($layout-padding * 2);
+    margin-bottom: $layout-unit;
   }
 }
 
@@ -28,8 +95,32 @@
 }
 
 .contact__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 50px;
   height: 50px;
-  margin-right: $layout-padding;
+  margin-right: $layout-unit;
+  color: $color-secondary;
+
+  background-color: $color-primary;
+  border-radius: 50%;
+}
+
+.contact__icon-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+
   fill: currentColor;
+
+  transition: $transition;
+
+  .contact__link:hover &,
+  .contact__link:focus & {
+    fill: $color-accent;
+  }
 }

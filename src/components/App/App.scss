@@ -6,7 +6,7 @@
   align-items: center;
   min-width: $mobile;
   min-height: 100vh;
-  padding: $layout-padding 0;
+  padding: 0 calc($layout-unit / 2);
   margin: 0 auto;
 
   font-size: 14px;
@@ -16,9 +16,14 @@
 
   color: $color-primary;
 
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding: $layout-unit $layout-unit calc($layout-unit * 5) $layout-unit;
+  }
+
   @media screen and (min-width: $desktop) {
     width: $desktop;
-    padding: $layout-padding calc($layout-padding * 2) calc($layout-padding * 5)
-      calc($layout-padding * 2);
+    padding: $layout-unit calc($layout-unit * 2) calc($layout-unit * 5)
+      calc($layout-unit * 2);
   }
 }
