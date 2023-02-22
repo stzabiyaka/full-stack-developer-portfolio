@@ -1,0 +1,90 @@
+@import '../../constants/constants.scss';
+
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 32px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+
+    color: $color-primary-translucent;
+    background-color: $background-triadic;
+
+    border: none;
+    border-radius: 8px;
+
+    &:not(:last-of-type) {
+      margin-right: 4px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: 36px;
+      height: 36px;
+
+      font-size: 16px;
+
+      &:not(:last-of-type) {
+        margin-right: 12px;
+      }
+    }
+
+    &.current {
+      background-color: $color-accent-dimmed;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+      background-color: $color-accent;
+    }
+  }
+
+  &__ellipsis {
+    display: flex;
+    align-self: flex-start;
+
+    font-size: 14px;
+    line-height: 0.7;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 1.1;
+    }
+  }
+
+  &__icon {
+    width: 10px;
+    height: 10px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    fill: currentColor;
+
+    @media screen and (min-width: $tablet) {
+      width: 14px;
+      height: 14px;
+    }
+
+    &--inverted {
+      transform: rotateZ(180deg);
+    }
+  }
+}

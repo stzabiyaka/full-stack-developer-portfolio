@@ -1,0 +1,24 @@
+@import '../../constants/constants.scss';
+
+.projects__list {
+  width: 100%;
+  margin: auto;
+
+  @media screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    gap: 14px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: repeat(3, 360px);
+    gap: 28px;
+  }
+
+  @media screen and (min-width: $desktopXL) {
+    grid-template-columns: repeat(3, 400px);
+    gap: calc($layout-unit * 2);
+    width: fit-content;
+  }
+}

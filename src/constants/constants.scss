@@ -7,21 +7,25 @@ $layout-unit: 16px;
 $layout-nav-height: 80px;
 
 $color-primary: #ffffff;
+$color-primary-translucent: rgba(255, 255, 255, 0.8);
 $color-secondary: #111111;
 $color-accent: #c90c0c;
-$color-accent-dimmed: #7d0606;
+$color-accent-dimmed: #580505;
 
 $background-primary: #000000;
 $background-secondary: #ffffff;
-$background-body: #c2c2c2;
+$background-triadic: rgba(31, 2, 2, 0.95);
 
-$font-primary: "Ubuntu", sans-serif;
-$font-secondary: "Questrial", sans-serif;
-$font-triadic: "Nunito Sans", sans-serif;
-
-$shadow-body: 0px 0px 2px rgba(230, 230, 230, 0.2),
-  50px 50px 100px rgba(17, 17, 17, 0.8);
+$font-primary: 'Ubuntu', sans-serif;
+$font-secondary: 'Questrial', sans-serif;
+$font-triadic: 'Nunito Sans', sans-serif;
 
 $shadow-decor: 0 0 10px $color-accent-dimmed;
 
 $transition: all 250ms ease-in;
+
+@mixin cssTransition($property) {
+  transition-property: $property;
+  transition-duration: 250ms;
+  transition-timing-function: ease-out;
+}

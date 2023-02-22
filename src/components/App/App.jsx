@@ -1,10 +1,10 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 // import AppBar from "../AppBar/AppBar";
-import Hero from "../Hero/Hero";
-import Projects from "../Projects/Projects";
-import Contact from "../Contact/Contact";
-import NavBar from "../NavBar/NavBar";
-import "./App.scss";
+import Hero from '../Hero/Hero';
+import ProjectsList from '../ProjectsList';
+import Contact from '../Contact';
+import NavBar from '../NavBar';
+import './App.scss';
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path="projects" element={<Projects />} />
+        <Route path="projects" element={<ProjectsList />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
     </div>

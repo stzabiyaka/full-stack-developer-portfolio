@@ -1,57 +1,91 @@
 [
   {
+    "name": "ClouDisk",
+    "page": "https://cloudisk.netlify.app/",
+    "repository": [{ "link": "https://github.com/stzabiyaka/cloud-storage", "title": "code" }],
+    "description": "Cloud file storage for personal use, developed using HTML5, CSS3, SASS, responsive layout, React.js, Redux, Redux Toolkit, Node.js, Express, MongoDB, Mongoose, REST API.",
+    "type": "Individual full-stack training project.",
+    "role": "Full-stack developer.",
+    "image": "cloudisk",
+    "stack": [
+      "html5",
+      "css3",
+      "sass",
+      "javaScript",
+      "react.js",
+      "redux",
+      "node.js",
+      "mongodb",
+      "api"
+    ]
+  },
+  {
     "name": "Petly",
-    "link": "https://velogitara.github.io/petly-project-front/",
-    "repositoryLink": "https://github.com/velogitara/petly-project-front",
-    "repositoryBackLink": "https://github.com/velogitara/PetLy-project-Back",
-    "description": "Web application for finding home for pets, developed using HTML5, CSS3, SCSS, responsive layout, React.js, Redux, Node.js, Express, MongoDB, Mongoose, REST API.",
+    "page": "https://velogitara.github.io/petly-project-front/",
+    "repository": [
+      { "link": "https://github.com/velogitara/petly-project-front", "title": "frontend code" },
+      { "link": "https://github.com/velogitara/PetLy-project-Back", "title": "backend code" }
+    ],
+    "description": "Web application for finding loving home for pets, developed using HTML5, CSS3, responsive layout, React.js, Redux, Redux Toolkit, Node.js, Express, MongoDB, Mongoose, REST API.",
     "type": "Team full-stack training project.",
     "role": "Full-stack developer.",
-    "image": "petly"
+    "image": "petly",
+    "stack": ["html5", "css3", "javaScript", "react.js", "redux", "node.js", "mongodb", "api"]
   },
   {
     "name": "MyTube",
-    "link": "https://zabiiaka-mytube.netlify.app/",
-    "repositoryLink": "https://github.com/stzabiyaka/my-tube-app-project",
+    "page": "https://zabiiaka-mytube.netlify.app/",
+    "repository": [
+      { "link": "https://github.com/stzabiyaka/my-tube-app-project", "title": "code" }
+    ],
     "description": "Web application for watching youtube videos, developed using HTML5, CSS3, responsive layout, React.js, Material UI, Emotion, RapidAPI.",
     "type": "Individual frontend training project.",
     "role": "Frontend developer.",
-    "image": "mytube"
+    "image": "mytube",
+    "stack": ["html5", "css3", "javaScript", "react.js", "mui", "api"]
   },
   {
     "name": "HooBank",
-    "link": "https://zabiiaka-hoobank.netlify.app/",
-    "repositoryLink": "https://github.com/stzabiyaka/bank-app-project",
+    "page": "https://zabiiaka-hoobank.netlify.app/",
+    "repository": [{ "link": "https://github.com/stzabiyaka/bank-app-project", "title": "code" }],
     "description": "Landing page for bank application, developed using HTML5, CSS3, responsive layout, React.js, Emotion.",
     "type": "Individual frontend training project.",
     "role": "Frontend developer.",
-    "image": "hoobank"
+    "image": "hoobank",
+    "stack": ["html5", "css3", "javaScript", "react.js"]
   },
   {
     "name": "Filmoteka",
-    "link": "https://stzabiyaka.github.io/filmoteka-team-project/",
-    "repositoryLink": "https://github.com/stzabiyaka/filmoteka-team-project",
-    "description": "Web application for searching movies and managing client's personal library, developed using HTML5, CSS3, SCSS, responsive layout, vanilla JavaScript, Parcel, REST API, AJAX.",
+    "page": "https://stzabiyaka.github.io/filmoteka-team-project/",
+    "repository": [
+      { "link": "https://github.com/stzabiyaka/filmoteka-team-project", "title": "code" }
+    ],
+    "description": "Web application for searching movies and managing client's personal library, developed using HTML5, CSS3, SASS, responsive layout, vanilla JavaScript, Parcel, REST API, AJAX.",
     "type": "Team frontend training project.",
     "role": "Team Lead.",
-    "image": "filmoteka"
+    "image": "filmoteka",
+    "stack": ["html5", "css3", "sass", "javaScript", "api"]
   },
   {
     "name": "IceCream",
-    "link": "https://stzabiyaka.github.io/icecream-team-project/",
-    "repositoryLink": "https://github.com/stzabiyaka/icecream-team-project",
-    "description": "Website for Ice Cream company, developed using HTML5, CSS3, SCSS, responsive layout, vanilla JavaScript, Parcel.",
+    "page": "https://stzabiyaka.github.io/icecream-team-project/",
+    "repository": [
+      { "link": "https://github.com/stzabiyaka/icecream-team-project", "title": "code" }
+    ],
+    "description": "Website for Ice Cream company, developed using HTML5, CSS3, SASS, responsive layout, vanilla JavaScript, Parcel.",
     "type": "Team frontend training project.",
     "role": "Team Lead.",
-    "image": "icecream"
+    "image": "icecream",
+    "stack": ["html5", "css3", "sass", "javaScript"]
   },
   {
     "name": "WebStudio",
-    "link": "https://stzabiyaka.github.io/web-studio/",
-    "repositoryLink": "https://github.com/stzabiyaka/web-studio",
-    "description": "Website for web studio, developed using HTML5, CSS3, SCSS, responsive layout",
+    "page": "https://stzabiyaka.github.io/web-studio/",
+    "repository": [{ "link": "https://github.com/stzabiyaka/web-studio", "title": "code" }],
+    "description": "Website for web studio, developed using HTML5, CSS3, SASS, responsive layout",
     "type": "Individual frontend training project.",
     "role": "Frontend developer.",
-    "image": "webstudio"
+    "image": "webstudio",
+    "stack": ["html5", "css3", "sass"]
   }
 ]

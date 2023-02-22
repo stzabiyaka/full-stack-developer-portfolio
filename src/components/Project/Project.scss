@@ -1,0 +1,195 @@
+@import '../../constants/constants.scss';
+
+.project {
+  margin-bottom: $layout-unit;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 10px rgba(88, 88, 88, 0.9);
+
+  @include cssTransition(transform color box-shadow);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  &:hover {
+    transform: scale(1.005);
+    color: $color-accent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+
+  & .is-visible {
+    cursor: default;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 28px 16px 16px 16px;
+
+    background-color: $background-triadic;
+    backdrop-filter: blur(5px);
+
+    transform: translateY(100%);
+
+    @include cssTransition(transform);
+
+    &.is-visible {
+      transform: translateY(0);
+    }
+
+    &-container {
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 320px;
+    height: 227px;
+
+    @media screen and (min-width: $tablet) {
+      width: 360px;
+      height: 255px;
+    }
+  }
+
+  &__title {
+    padding: 1vmin;
+    font-size: 20px;
+    font-family: $font-secondary;
+    color: currentColor;
+  }
+
+  &__description {
+    margin-bottom: 8px;
+
+    text-align: left;
+
+    color: $color-primary-translucent;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+
+    color: $color-primary-translucent;
+
+    &-title {
+      font-weight: 500;
+      color: $color-primary;
+    }
+  }
+
+  &__stack {
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+
+    &-item {
+      width: 16px;
+      height: 16px;
+
+      &:not(:last-of-type) {
+        margin-right: 8px;
+      }
+    }
+
+    &-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      &:not(:first-of-type) {
+        margin-left: 8px;
+      }
+
+      &:nth-of-type(2) {
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 8px;
+
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    color: $color-primary;
+    background-color: $color-accent-dimmed;
+
+    border: 2px solid $color-accent-dimmed;
+    border-radius: 8px;
+
+    @include cssTransition(color border-color box-shadow);
+
+    &:hover,
+    &:focus {
+      border-color: $color-accent;
+      background-color: $color-accent;
+      box-shadow: 0 0 5px $color-accent;
+    }
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 4px;
+  margin-left: auto;
+  opacity: 0.5;
+
+  cursor: pointer;
+
+  color: $color-primary-translucent;
+  background-color: transparent;
+
+  border: 2px solid currentColor;
+  border-radius: 8px;
+
+  @include cssTransition(color opacity);
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+    opacity: 1;
+  }
+
+  &__icon {
+    width: 12px;
+    height: 12px;
+
+    fill: currentColor;
+  }
+}
