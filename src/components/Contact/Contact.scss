@@ -1,34 +1,47 @@
-@import "../../constants/constants.scss";
+@import '../../constants/constants.scss';
 
 $card-width: 600px;
+$card-height: 466px;
 
 .contacts__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: auto;
-  width: 100%;
+  width: 90%;
+  height: $card-height;
+  padding: $layout-unit;
+
+  background: linear-gradient(to bottom, #ffffff 40%, $color-secondary 40%);
+
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 
   @media screen and (min-width: $tablet) {
-    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     width: $card-width;
+    height: fit-content;
     padding: calc($layout-unit * 3) $layout-unit;
 
     background: linear-gradient(to right, #ffffff 50%, $color-secondary 50%);
-
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   }
 }
 
 .contacts__info {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 40%;
+
+  color: $color-accent;
 
   @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: $color-accent;
     width: calc($card-width / 2 - $layout-unit - 25px);
+    height: fit-content;
   }
 }
 
@@ -57,10 +70,14 @@ $card-width: 600px;
 }
 
 .contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: fit-content;
   margin: 0 auto;
 
   @media screen and (min-width: $tablet) {
+    height: fit-content;
     margin: 0;
   }
 }

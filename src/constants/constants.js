@@ -12,9 +12,9 @@ const CONSTANTS = {
   title: 'Junior Full-Stack Developer',
 
   navLinks: ['home', 'projects', 'contact'],
-  stack: ['html5', 'css3', 'javaScript', 'react.js', 'redux', 'node.js'],
+  stack: ['html5', 'css3', 'sass', 'javaScript', 'react.js', 'redux', 'node.js', 'git', 'mongodb'],
   about:
-    'I am a full-stack developer, dedicated to creation of beautiful, functional and convenient web applications.',
+    'I am a full-stack junior developer, dedicated to creation of beautiful, functional and convenient web applications. Web development - is my real passion. Specialized in HTML, CSS, JavaScript, React.js, Node.js. My main stack is MERN. I have a hands-on experience in teamwork, as well as in Agile and Scrum methodologies. Can work individually, or as a team member, remotely or from the office, as a freelancer, or as a part of a company.  I am responsible, attentive, considerate, fast learning, broad-minded, and poised to solve various tasks.',
   projects,
   contacts,
   images,

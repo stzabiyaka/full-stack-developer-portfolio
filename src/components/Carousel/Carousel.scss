@@ -1,0 +1,81 @@
+@import '../../constants/constants.scss';
+
+.carousel {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+
+  background: radial-gradient(circle at bottom, #aa0b0b, #580505 100%);
+
+  border: none;
+  border-radius: 50%;
+
+  filter: drop-shadow(0 0 50px #c40b0b) drop-shadow(0 0 10px #880909);
+
+  transform: translateX(-50%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    background: radial-gradient(
+      circle at top,
+      rgba(255, 255, 255, 0.8),
+      rgba(248, 248, 248, 0.01) 58%
+    );
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    z-index: 2;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: none;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+    z-index: 2;
+    -webkit-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    fill: $color-accent-dimmed;
+
+    animation-name: carousel;
+    animation-duration: 7000ms;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes carousel {
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -6,9 +6,7 @@
   font-size: 12px;
   font-weight: 400;
 
-  cursor: pointer;
-
-  box-shadow: 0 0 10px rgba(88, 88, 88, 0.9);
+  box-shadow: 0 0 10px $color-accent-dimmed;
 
   @include cssTransition(transform color box-shadow);
 
@@ -18,13 +16,13 @@
   }
 
   &:hover {
-    transform: scale(1.005);
     color: $color-accent;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-  }
+    box-shadow: 0 0 20px $color-accent;
+    cursor: pointer;
 
-  & .is-visible {
-    cursor: default;
+    & .is-visible {
+      cursor: default;
+    }
   }
 
   &__overlay {
