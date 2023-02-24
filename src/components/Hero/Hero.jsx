@@ -2,9 +2,11 @@ import { Link } from 'react-router-dom';
 import { CONSTANTS } from '../../constants/constants';
 import Section from '../Section/Section';
 import Carousel from '../Carousel/Carousel';
+import images from '../../assets/images';
 import './Hero.scss';
 
 const { title, name, familyName, about, stack } = CONSTANTS;
+const { heroImage } = images;
 
 const Hero = () => {
   return (
@@ -18,7 +20,7 @@ const Hero = () => {
         <h1 className="hero__title">{title}</h1>
         <div className="hero__details">
           <div className="hero__picture">
-            {/* <img src="" alt="" className="hero__picture-image" /> */}
+            <img src={heroImage} alt="Stanislav Zabiiaka" className="hero__picture-image" />
             <Carousel images={stack} />
           </div>
           <div className="hero__about">
