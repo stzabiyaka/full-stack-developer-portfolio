@@ -28,7 +28,7 @@ const Hero = () => {
               <Link to="/projects" className="hero__about-link" title="Go to projects page">
                 projects
               </Link>
-              , which I developed individually, or took part as a team member.
+              , which I developed individually, or participated as a team member.
             </p>
             <p className="hero__about-text">
               Please, feel free to{' '}
