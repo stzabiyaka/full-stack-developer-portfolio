@@ -82,7 +82,8 @@ import cloudiskDesktopWebp from './cloudisk/cloudisk-400.webp';
 import cloudiskMobileRetinaWebp from './cloudisk/cloudisk-320@2x.webp';
 import cloudiskTabletRetinaWebp from './cloudisk/cloudisk-360@2x.webp';
 import cloudiskDesktopRetinaWebp from './cloudisk/cloudisk-400@2x.webp';
-import heroImage from './sz.png';
+import heroImage from './stanislav.png';
+import heroImage2x from './stanislav@2x.png';
 
 const images = {
   webstudioMobile,
@@ -170,6 +171,7 @@ const images = {
   cloudiskTabletRetinaWebp,
   cloudiskDesktopRetinaWebp,
   heroImage,
+  heroImage2x,
 };
 
 export default images;

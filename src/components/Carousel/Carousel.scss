@@ -2,22 +2,39 @@
 
 .carousel {
   position: absolute;
-  bottom: 10%;
-  left: 50%;
+  bottom: -10%;
+  left: 52%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
 
-  background: radial-gradient(circle at bottom, #aa0b0b, #580505 100%);
+  background: radial-gradient(circle at bottom, #aa0b0b, #58050527 100%);
+  backdrop-filter: blur(5px);
 
   border: none;
   border-radius: 50%;
 
-  filter: drop-shadow(0 0 50px #c40b0b) drop-shadow(0 0 10px #880909);
+  filter: drop-shadow(0 0 50px $color-primary) drop-shadow(0 0 30px $color-accent);
 
   transform: translateX(-50%);
+
+  @media screen and (min-width: $tablet) {
+    bottom: -5%;
+    width: 125px;
+    height: 125px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media screen and (min-width: $desktopXL) {
+    width: 260px;
+    height: 260px;
+  }
 
   &::before {
     content: '';

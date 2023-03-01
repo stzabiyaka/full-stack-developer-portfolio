@@ -6,7 +6,7 @@ import images from '../../assets/images';
 import './Hero.scss';
 
 const { title, name, familyName, about, stack } = CONSTANTS;
-const { heroImage } = images;
+const { heroImage, heroImage2x } = images;
 
 const Hero = () => {
   return (
@@ -20,7 +20,12 @@ const Hero = () => {
         <h1 className="hero__title">{title}</h1>
         <div className="hero__details">
           <div className="hero__picture">
-            <img src={heroImage} alt="Stanislav Zabiiaka" className="hero__picture-image" />
+            <img
+              srcSet={`${heroImage} 1x, ${heroImage2x} 2x"`}
+              src={heroImage}
+              alt="Stanislav Zabiiaka"
+              className="hero__picture-image"
+            />
             <Carousel images={stack} />
           </div>
           <div className="hero__about">
